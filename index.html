@@ -5,21 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/20ec0208ec.js" crossorigin="anonymous"></script>
     <title>Maquetación</title>
 </head>
 
 <body>
     <header>
-        <nav>
+        
+        <nav class="navbar">
             <img src="img/logo.png" alt="logo">
-            <ul>
-                <li><a href="">About</a></li>
-                <li><a href="">Features</a></li>
-                <li><a href="">Use case</a></li>
-                <li><a href="">Pricing</a></li>
-                <li><a class="btn-download" href="">Download</a></li>
-            </ul>
+            <input type="checkbox" id="toggler">
+            <label for="toggler"> <i class="fa-solid fa-bars"></i> </i></label>
+            <div class="menu">
+                <ul class="list-menu">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Use case</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a class="btn-download" href="#">Download</a></li>
+                </ul>
+            </div>
         </nav>
+     
     </header>
 
     <section class="section1">
@@ -32,7 +39,6 @@
             </p>
             <br>
             <br>
-
             <div class="btn-1">
                 <a class="btn-it-now">Download it now</a>
                 <a class="btn-feature">Features</a>
@@ -50,9 +56,9 @@
 
         <div class="img2">
             <img src="/img/laptop.png" alt="">
-            
+
             <div class="text2">
-                
+
                 <h3>Alpha Screenshot</h3>
                 <br>
                 <p>
@@ -62,16 +68,154 @@
                 </p>
                 <br>
                 <h4>— Marketin Page</h4>
-                <p>Based on Bootrap 4</p>
-                <p>Modern and creative</p>
-                <p>Optimized for mobile devices</p>
+                <p> <img src="/img/cheque.png"> Based on Bootrap 4</p>
+                <p> <img src="/img/cheque.png"> Modern and creative</p>
+                <p> <img src="/img/cheque.png"> Optimized for mobile devices</p>
             </div>
         </div>
 
     </section>
 
-    <section class="section3"></section>
+    <section class="section3">
+        <div class="text3">
+            <h2> Plans & Pricing </h2>
 
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet malesuada feugiat.<br>
+                Curabitur fermentum bibendum nulla, non dictum ipsum tincidunt non. Quisque convallis <br>
+                pharetra tempor. Donec id pretium leo. Pellentesque luctus massa non elit viverra pellentesque. <br>
+                Cras vitae neque molestie, rhoncus ipsum sit amet, lobortis dui. Fusce in urna sem.
+            </p>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <img src="/img/hoja.png" alt="" class="star-img">
+                <br>
+                <h3 class="h3">Lite</h3>
+                <br>
+                <h4>$0 <p>Free</p>
+                </h4>
+                <br>
+                <div class="list">
+                    <div class="list-img">
+                        <img src="/img/estrella-pink.png" alt="">
+                        <img src="/img/chulo-pink.png" alt="">
+                        <img src="/img/chulo-pink.png" alt="">
+                        <img src="/img/chulo-pink.png" alt="">
+                        <img class="x" src="/img/x3.png" alt="">
+                    </div>
+                    <div class="list-li">
+                        <li>Full Components</li>
+                        <li>Future Updates</li>
+                        <li>Documentation</li>
+                        <li>Customer Support</li>
+                        <li>Cool Option</li>
+                    </div>
+                </div>
+                <br>
+                <p>
+                    Nulla vel metus scelerisque <br>
+                    ante sollicitudin. Cras purus <br>
+                    odio, vestibulum in vulputate <br>
+                    at, tempus viverra turpis
+                </p>
+                <br>
+                <label>
+                    <a class="a-btn"> Subscribe Now </a>
+                </label>
+            </div>
+
+            <div class="card">
+                <img src="/img/nube.png" alt="" class="star-img">
+                <br>
+                <h3>Standard</h3>
+                <br>
+                <h4>$24 <p>per month</p>
+                </h4>
+                <br>
+                <div class="list">
+                    <div class="list-img">
+                        <img src="/img/estrella.png" alt="">
+                        <img src="/img/chulo.png" alt="">
+                        <img src="/img/chulo.png" alt="">
+                        <img src="/img/chulo.png" alt="">
+                        <img class="x" src="/img/x3.png" alt="">
+                    </div>
+                    <div class="list-li">
+                        <li>Full Components</li>
+                        <li>Future Updates</li>
+                        <li>Documentation</li>
+                        <li>Customer Support</li>
+                        <li>Cool Option</li>
+                    </div>
+                </div>
+                <br>
+                <p>
+                    Nulla vel metus scelerisque <br>
+                    ante sollicitudin. Cras purus <br>
+                    odio, vestibulum in vulputate <br>
+                    at, tempus viverra turpis
+                </p>
+                <br>
+                <label>
+                    <a> Subscribe Now </a>
+                </label>
+            </div>
+
+            <div class="card">
+                <img src="/img/maletin.png" alt="" class="star-img">
+                <br>
+                <h3>Ultimate</h3>
+                <br>
+                <h4>$400 <p>per user <br> / year</p>
+                </h4>
+                <br>
+                <div class="list">
+                    <div class="list-img">
+                        <img src="/img/estrella.png" alt="">
+                        <img src="/img/chulo.png" alt="">
+                        <img src="/img/chulo.png" alt="">
+                        <img src="/img/chulo.png" alt="">
+                        <img class="x" src="/img/x3.png" alt="">
+                    </div>
+                    <div class="list-li">
+                        <li>Full Components</li>
+                        <li>Future Updates</li>
+                        <li>Documentation</li>
+                        <li>Customer Support</li>
+                        <li>Cool Option</li>
+                    </div>
+                </div>
+                <br>
+                <p>
+                    Nulla vel metus scelerisque <br>
+                    ante sollicitudin. Cras purus <br>
+                    odio, vestibulum in vulputate <br>
+                    at, tempus viverra turpis
+                </p>
+                <br>
+                <label>
+                    <a> Subscribe Now </a>
+                </label>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p><i>
+                <img src="/img/Copyright.png" alt=""> Website made by <b> Santiago Hurtado Marulanda </b> -
+                sh1419349@gmail.com
+            </i></p>
+
+        <div>
+            <a href="https://www.facebook.com/" target="_blank"> <img src="/img/facebook.png" alt=""> </a>
+            <a href="https://twitter.com/" target="_blank"> <img src="/img/Twtter.png" alt=""> </a>
+            <a href="https://www.linkedin.com/" target="_blank"> <img src="/img/linkedin.png" alt=""> </a>
+            <a href="https://www.instagram.com/" target="_blank"> <img src="/img/instagram.png" alt=""> </a>
+        </div>
+    </footer>
+    <script src="/script.js"></script>
 </body>
 
 </html>
