@@ -38,6 +38,10 @@ header a {
     transition: 0.2s;
 }
 
+.About{
+    color: white;
+}
+
 header a:hover {
     color: white;
 
@@ -68,6 +72,8 @@ header a:hover {
     background: linear-gradient(to left, #8142D5, #1079D5);
 }
 
+        /* SECTION 1 */
+
 .section1 {
     background-color: #2E2550;
     color: white;
@@ -81,7 +87,12 @@ header a:hover {
 }
 
 .txt1 {
-    padding-left: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.sub-text1{
+    width: 38rem;
 }
 
 .txt1 h2 {
@@ -91,6 +102,7 @@ header a:hover {
 .txt1 p {
     font-size: 1.7rem;
 }
+
 
 .btn-1 {
     display: inline-block;
@@ -135,20 +147,22 @@ header a:hover {
 
 .img1 {
     position: relative;
+    height: 80vh;
 }
 
 .image1 {
     width: 100%;
+    height: 100%;
 }
 
 .image2 {
     position: absolute;
-    top: 10%;
+    top: 20%;
     left: 15%;
-    height: 80%;
+    height: 70%;
 }
 
-/* SECTION2 */
+        /* SECTION2 */
 
 .section2 {
     background-color: #F1F2F7;
@@ -168,8 +182,8 @@ header a:hover {
     padding-top: 2%;
 }
 
-.img2 img {
-    width: 30%;
+.laptop {
+    width: 40rem;
 }
 
 .text2 h3 {
@@ -204,6 +218,10 @@ header a:hover {
 
 .text3 {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 6rem;
 }
 
 .text3 h2 {
@@ -212,9 +230,9 @@ header a:hover {
 }
 
 .text3 p {
-    padding-bottom: 3rem;
     font-size: 1.3rem;
     color: #ADAAB3;
+    width: 55rem;
 }
 
 .cards {
@@ -355,23 +373,22 @@ footer div img:hover {
 /* MEDIA QUERYS */
 
 @media (max-width: 920px) {
-    header img {
-        object-fit: contain;
-        width: 100%;
-
-    }
-
-    header ul {
+    .navbar {
         display: flex;
         flex-direction: column;
-
+        justify-content: space-between;
+    }
+    
+    .navbar img {
+        /* object-fit: contain; */
+        width: 10rem;
     }
 
-    header nav {
+    .navbar label{
+        border: solid 2px red;
         display: flex;
-        flex-direction: column;
-    }
-
+        justify-content: end;
+    }        
  
     .menu {
         width: 100%;
@@ -426,6 +443,18 @@ footer div img:hover {
         font-size: 2.5rem;
     }
 
+    .img2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .laptop{
+        width:20rem;
+        padding-bottom: 2rem;
+    }
+
     .img2 h3 {
         font-size: 2rem;
     }
@@ -440,6 +469,9 @@ footer div img:hover {
 
     .section3 p {
         font-size: .8rem;
+        width: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     .cards {
@@ -489,6 +521,19 @@ footer div img:hover {
     .card a {
         padding: .5rem;
         font-size: 1rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    footer p{
+        text-align: center;
+    }
+
+    footer div{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 }
 
@@ -578,6 +623,10 @@ footer div img:hover {
 
     .section3 p {
         font-size: .8rem;
+        text-align: left;
+        width: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     .cards {
@@ -622,11 +671,25 @@ footer div img:hover {
     .card p {
         font-size: .8rem;
         font-weight: 500;
+        text-align: center;
     }
 
     .card a {
         padding: .5rem;
         font-size: 1rem;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    footer p{
+        text-align: center;
+    }
+
+    footer div{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
 }
