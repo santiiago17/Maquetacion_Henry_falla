@@ -21,7 +21,7 @@ img {
 
 .navbar {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -29,16 +29,16 @@ header ul {
     display: flex;
     align-items: center;
     gap: 3rem;
-    
+
 }
 
 header a {
     font-size: 1.2rem;
     color: #888592;
-    transition: 0.2s;
+    
 }
 
-.About{
+.About {
     color: white;
 }
 
@@ -48,15 +48,19 @@ header a:hover {
 }
 
 #toggler,
-.navbar label{
+.navbar label {
     display: none;
 }
 
-.fa-solid{
+.fa-solid {
     font-size: 2rem;
     color: white;
     display: flex;
     padding: 1rem;
+}
+.open-menu,
+.close-menu{
+    /* display: none; */
 }
 
 
@@ -72,7 +76,7 @@ header a:hover {
     background: linear-gradient(to left, #8142D5, #1079D5);
 }
 
-        /* SECTION 1 */
+/* SECTION 1 */
 
 .section1 {
     background-color: #2E2550;
@@ -91,8 +95,9 @@ header a:hover {
     justify-content: center;
 }
 
-.sub-text1{
+.sub-text1 {
     width: 38rem;
+    
 }
 
 .txt1 h2 {
@@ -162,7 +167,7 @@ header a:hover {
     height: 70%;
 }
 
-        /* SECTION2 */
+/* SECTION2 */
 
 .section2 {
     background-color: #F1F2F7;
@@ -239,7 +244,7 @@ header a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 10rem;
 }
 
 .card {
@@ -375,25 +380,37 @@ footer div img:hover {
 @media (max-width: 920px) {
     .navbar {
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
-    }
-    
-    .navbar img {
-        /* object-fit: contain; */
-        width: 10rem;
+
+
     }
 
-    .navbar label{
-        border: solid 2px red;
+    .navbar img {
+        width: 10rem;
+    }
+    .open-menu,
+    .close-menu{
+        border: none;
+        background-color: transparent;
+        justify-content: flex-end;
         display: flex;
-        justify-content: end;
-    }        
- 
+    }
+    .menu.visible{
+        visibility: visible;
+        opacity: 1;
+      
+    }
     .menu {
-        width: 100%;
-        max-height: 0;
-        overflow: hidden;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        right: 0;
+        padding-bottom: 1rem;
+        width: 12rem;
+        position: absolute;
+        background-color: #1E172F;
+        box-shadow: 0 0 0 900vmax rgba(0, 0, 0, 0.6)
     }
 
 
@@ -403,14 +420,8 @@ footer div img:hover {
         padding: 20px;
     }
 
-    .navbar label {
-        display: inline-flex;
-        cursor: pointer;
-    }
 
-    #toggler:checked~.menu {
-        max-height: 100%;
-    }
+   
 
     .img1 {
         display: none;
@@ -434,7 +445,7 @@ footer div img:hover {
         font-size: 1rem;
         padding: .6rem
     }
-
+    
     .section1 h2 {
         font-size: 2.5rem;
     }
@@ -443,15 +454,15 @@ footer div img:hover {
         font-size: 2.5rem;
     }
 
-    .img2{
+    .img2 {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
 
-    .laptop{
-        width:20rem;
+    .laptop {
+        width: 20rem;
         padding-bottom: 2rem;
     }
 
@@ -527,55 +538,61 @@ footer div img:hover {
         display: flex;
         flex-direction: column;
     }
-    footer p{
+
+    footer p {
         text-align: center;
     }
 
-    footer div{
+    footer div {
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 480px) {
     header img {
         object-fit: contain;
         width: 100%;
 
     }
 
-    header ul {
+    .navbar {
         display: flex;
-        flex-direction: column;
-
+        flex-direction: row;
     }
-
-    header nav {
+    .open-menu,
+    .close-menu{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: block;
+    }
+    .close-menu{
         display: flex;
-        flex-direction: column;
+        justify-content: flex-end;
     }
-
- 
     .menu {
-        width: 100%;
-        max-height: 0;
-        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        visibility: hidden;
+        width: 12rem;
+        right: 0;
+        top: 0rem;
+        position: absolute;
+        background-color: #1E172F;
+        padding: 0 2rem 1rem 2rem;
+        box-shadow: 0 0 0 900vmax rgba(0, 0, 0, 0.6)
+    }
+    .menu.visible{
+        opacity: 1;
+        visibility: visible;
     }
 
 
     .list-menu {
         flex-direction: column;
-        align-items: center;
-        padding: 20px;
-    }
-
-    .navbar label {
-        display: inline-flex;
-        cursor: pointer;
-    }
-
-    #toggler:checked~.menu {
-        max-height: 100%;
+        
+        
     }
 
     .img1 {
@@ -585,9 +602,18 @@ footer div img:hover {
     .txt1 {
         width: 100%;
     }
+    .sub-text1 {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
 
     .txt1 p {
         font-size: 1rem;
+        width: 85%;
+       
     }
 
     .btn-1 {
@@ -678,16 +704,17 @@ footer div img:hover {
         padding: .5rem;
         font-size: 1rem;
     }
-    
+
     footer {
         display: flex;
         flex-direction: column;
     }
-    footer p{
+
+    footer p {
         text-align: center;
     }
 
-    footer div{
+    footer div {
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
