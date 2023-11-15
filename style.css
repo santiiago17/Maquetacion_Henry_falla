@@ -60,7 +60,7 @@ header a:hover {
 }
 .open-menu,
 .close-menu{
-    /* display: none; */
+    display: none;
 }
 
 
@@ -378,11 +378,9 @@ footer div img:hover {
 /* MEDIA QUERYS */
 
 @media (max-width: 920px) {
-    .navbar {
+        .navbar {
         display: flex;
         justify-content: space-between;
-
-
     }
 
     .navbar img {
@@ -413,15 +411,11 @@ footer div img:hover {
         box-shadow: 0 0 0 900vmax rgba(0, 0, 0, 0.6)
     }
 
-
     .list-menu {
         flex-direction: column;
         align-items: center;
         padding: 20px;
     }
-
-
-   
 
     .img1 {
         display: none;
@@ -430,6 +424,15 @@ footer div img:hover {
     .txt1 {
         width: 100%;
     }
+
+    .sub-text1 {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
 
     .txt1 p {
         font-size: 1rem;
@@ -441,7 +444,6 @@ footer div img:hover {
     }
 
     .txt1 a {
-
         font-size: 1rem;
         padding: .6rem
     }
@@ -490,7 +492,7 @@ footer div img:hover {
     }
 
     .card {
-        width: 65%;
+        width: 20rem;
         height: 45%;
 
     }
@@ -581,7 +583,7 @@ footer div img:hover {
         position: absolute;
         background-color: #1E172F;
         padding: 0 2rem 1rem 2rem;
-        box-shadow: 0 0 0 900vmax rgba(0, 0, 0, 0.6)
+        box-shadow: 0 0 0 900vmax rgba(0, 0, 0, 0.6);
     }
     .menu.visible{
         opacity: 1;
@@ -591,8 +593,6 @@ footer div img:hover {
 
     .list-menu {
         flex-direction: column;
-        
-        
     }
 
     .img1 {
@@ -602,6 +602,7 @@ footer div img:hover {
     .txt1 {
         width: 100%;
     }
+
     .sub-text1 {
         text-align: center;
         align-items: center;
