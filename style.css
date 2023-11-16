@@ -420,8 +420,7 @@ footer div img:hover {
     }
 
     .list-menu li{
-        border-bottom: solid 2px #888592;
-        width: 30vw;
+        width: 20rem;
         text-align: center;
         padding-bottom: 1rem;
     }
@@ -429,17 +428,10 @@ footer div img:hover {
         font-size: 1.4rem;
     } 
 
-    .list-menu li:hover{
-        border-bottom:solid 2px white;
-    }
     
-    .list-menu .btn-d{
-        border-bottom: solid 0px;
-    }
+    
 
-    .list-menu .btn-d:hover{
-        border-bottom: solid 0px;
-    }
+   
 
     .img1 {
         display: none;
@@ -626,20 +618,13 @@ footer div img:hover {
     }
 
     .list-menu li{
-        border-bottom: solid 2px #888592;
         width: 30vw;
         text-align: center;
         padding-bottom: 1rem;
     }
     
 
-    .list-menu li:hover{
-        border-bottom:solid 2px white;
-    }
-    
-    .list-menu .btn-d{
-        border-bottom: solid 0px;
-    }
+  
     
     .btn-download {
         display: flex;
@@ -647,10 +632,7 @@ footer div img:hover {
 
     }
 
-    .list-menu .btn-d:hover{
-        border-bottom: solid 0px;
-    }
-
+  
     .img1 {
         display: none;
     }
