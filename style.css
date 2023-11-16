@@ -629,9 +629,7 @@ footer div img:hover {
         text-align: center;
         padding-bottom: 1rem;
     }
-    .list-menu li a{
-        font-size: 1.4rem;
-    } 
+    
 
     .list-menu li:hover{
         border-bottom:solid 2px white;
